@@ -1,21 +1,19 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {library} from '@fortawesome/fontawesome-svg-core';
-import {faBank, faBuilding, faPencil, faPhone, faPlus, faTag, faTrash, faUser} from '@fortawesome/free-solid-svg-core';
-import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
-import { createApp } from 'vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-import App from './App.vue'
-import router from './router'
+// Añadir los íconos de Font Awesome a la biblioteca
+library.add(fas);
 
-library.add(faPhone);
-library.add(faUser);
-library.add(faTrash);
-library.add(faPencil);
-library.add(faTag);
-library.add(faBank);
-library.add(faPlus);
+    
+
+
 
 
 createApp(App)
