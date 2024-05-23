@@ -1,7 +1,7 @@
 <template>
     <div class= "container">
         <h1>Listado de Comunas</h1>
-        <table class="table">
+        <table class="table table-dark table-striped">
           <thead>
             <tr>
               <th scope="col">Codigo</th>
